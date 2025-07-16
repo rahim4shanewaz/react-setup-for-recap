@@ -22,7 +22,7 @@ export default function Users(){
 
             <h3>Users Count: {users.length}</h3>
             {
-                users.map(user => <Countries user={user} />)
+                users.slice(0, 2).map(user => <Countries user={user} />)
             }
 
 
